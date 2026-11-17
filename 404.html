@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sayfa bulunamadı · Page not found · Blodheim</title>
+<meta name="robots" content="noindex">
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #0c1113; color: #ece5d7;
+         font: 18px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; text-align: center; padding: 24px 16px; box-sizing: border-box; }
+  h1 { font-family: Georgia, serif; color: #e6bb68; letter-spacing: .06em; margin: 0 0 8px; }
+  p { color: #a99f90; margin: 4px 0; }
+  a { display: inline-block; margin: 20px 8px 0; padding: 10px 20px; border-radius: 10px; color: #22170a; font-weight: 700; text-decoration: none;
+      background: linear-gradient(180deg, #f1cd83, #c8964a); }
+</style>
+</head>
+<body>
+<main>
+  <h1>404</h1>
+  <p>Aradığın sayfa fiyortlarda kayboldu.</p>
+  <p lang="en">The page you are looking for was lost in the fjords.</p>
+  <a id="tr" href="/">Ana sayfa</a><a id="en" href="/en/" lang="en">Home</a>
+</main>
+<script>
+  (function () {
+    var base = location.pathname.indexOf('/blodheim/') === 0 ? '/blodheim/' : '/';
+    document.getElementById('tr').href = base;
+    document.getElementById('en').href = base + 'en/';
+  })();
+</script>
+</body>
+</html>

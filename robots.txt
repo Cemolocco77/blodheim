@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cemolocco77.github.io/blodheim/sitemap.xml
